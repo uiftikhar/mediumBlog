@@ -1,5 +1,5 @@
 <h1> My Blog </h1>
 
-<% @posts.each do |post| %>
-	<%= post.title %>
-<% end %>
+<div class="posts">
+	<%= render @posts %>
+</div>
