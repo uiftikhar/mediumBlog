@@ -5,7 +5,7 @@
 
 			<li class="new-story-button"><%= link_to  "Write a story", new_post_path, class: "button"%></li>
 				<% if user_signed_in? %>
-					<li class="current-user-avatar"><%= link_to(avatar_for(current_user, size: 26) , current_user) %></li>
+					<li class="current-user-avatar"><%= link_to(avatar_for(current_user, size: 35) , current_user) %></li>
 					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
 				<% else %>
 					<li class="new-story-button"><%= link_to "Sign In/Sign Up", new_user_session_path, class: "button " %> </li>
