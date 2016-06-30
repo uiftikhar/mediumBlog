@@ -1,0 +1,21 @@
+.post-metadata {
+  display: flex;
+  .post-info {
+    padding-left: 10px;
+    a {
+      color: #00ab6b;
+      text-decoration: none;
+    }
+    small {
+      color: rgba(0,0,0,0.44);
+    }
+  }
+}
+.main-content .post-metadata {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-height{
+  height: 10%;
+}

@@ -26,11 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~>4.1.1'
 
 gem 'bootstrap-sass','~>3.3.6'
-gem 'react-rails', '~>1.7.1'
+gem 'react-rails', '~> 1.7.2'
 gem 'medium-editor-rails'
 gem 'toggle', '~>1.0.0'
 gem 'carrierwave' , '~>0.11.2'
 gem 'mini_magick','~>4.5.1'
+gem  'animate-rails', '~>1.0.10'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

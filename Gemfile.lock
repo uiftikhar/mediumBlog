@@ -36,6 +36,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    animate-rails (1.0.10)
+      rails
     arel (6.0.3)
     autoprefixer-rails (6.3.6.2)
       execjs
@@ -137,7 +139,7 @@ GEM
     rake (11.2.2)
     rdoc (4.2.2)
       json (~> 1.4)
-    react-rails (1.7.1)
+    react-rails (1.7.2)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
       connection_pool
@@ -188,6 +190,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails (~> 1.0.10)
   bootstrap-sass (~> 3.3.6)
   byebug
   carrierwave (~> 0.11.2)
@@ -200,7 +203,7 @@ DEPENDENCIES
   mini_magick (~> 4.5.1)
   pg (~> 0.15)
   rails (= 4.2.6)
-  react-rails (~> 1.7.1)
+  react-rails (~> 1.7.2)
   sass-rails (~> 5.0.4)
   sdoc (~> 0.4.0)
   spring

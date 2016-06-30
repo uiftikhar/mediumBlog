@@ -1,8 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 @import "modules/buttons";
 @import "modules/post_panel";
 @import "modules/header";
 @import "modules/avatar";
+@import "modules/searchbar";
+@import 'modules/page_load_animations';
+@import 'modules/post_metadata';
+@import 'modules/editor_form';
+@import 'modules/hero';
+
 

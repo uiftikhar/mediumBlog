@@ -1,9 +1,20 @@
-<h1> Edit your Profile</h1>	
+<div class="profile-container animated fadeInUp-small" data-page="users-edit" data-animation="fadeInUp-fadeOutDown-slow">
+  <div class="hero-wrapper">
+    <%= form_for @user, html: { multipart: true } do |f| %>
+        <header class="hero">
+          <div class="profile-info">
+            <h1 class="hero-title"><%= @user.username %></h1>
+            <p class="hero-description"><%= f.text_area :description, rows: 3, autofocus: true, placeholder: "Tell the world about yourself!" %></p>
+          </div>
 
-<%= form_for(@user, html: { multipart: true }) do |f| %>
-	<%= f.label :username %>
-	<%= f.text_field :username %>
-	<%= f.file_field :avatar %>
-	<%= f.submit "Save Change" %>
 
-<% end %>  
+            <label class="change-avatar" id="change-avatar">
+	              <%= f.file_field :avatar %>
+            </label>
+        </header>
+
+        <%= f.submit "Save Change", class: 'button' %>
+        <%= link_to "Cancel", @user, class: 'button' %>
+    <% end %>
+  </div>
+</div>
