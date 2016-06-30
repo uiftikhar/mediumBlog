@@ -1,7 +1,11 @@
  <div class="post-panel">
+   <%= render partial: 'posts/post_metadata', locals: { post: post } %>
+
 	POST: <%= post.username %>
 	<%= link_to post.username, post.user %>
 	<h3><%= post.title %></h3>	
 	<p> <%= post.all_tags %> </p>
+	<p> <%= post.body %> </p>
 </div>
+
 
