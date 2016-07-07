@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require medium-editor
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets  
@@ -19,4 +20,3 @@
 //= require components
 //= require medium-editor
 //= require_tree .
- 

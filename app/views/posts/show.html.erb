@@ -1,0 +1,12 @@
+<h1> iuhuhuhbiub </h1>
+<div class="row" data-animation="fadeInUp-fadeOutDown">
+  <div id="main-post" class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1 main-content">
+    <%= render 'post_metadata', post: @post %>
+
+    <h3 class="title"><%= @post.title %></h3>
+    <div class="body">
+      <p><%=@post.body%></p>
+    </div>
+  </div>
+</div> 
+<script>var editor = new MediumEditor('.body');</script>

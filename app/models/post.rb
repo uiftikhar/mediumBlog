@@ -7,6 +7,14 @@ class Post < ActiveRecord::Base
 
 	delegate :username, to: :user
 
+	def show
+		find params[:id]
+	    @post = Post.first
+  	end
+  	
+	def edit
+  	end
+
 	def self.tagged_with(name)
 		Tag.find_by!(name: name).posts
 	end
