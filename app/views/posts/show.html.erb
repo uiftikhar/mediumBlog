@@ -9,4 +9,25 @@
     </div>
   </div>
 </div> 
-<script>var editor = new MediumEditor('.body');</script>
+
+<script>var editor = new MediumEditor('.body', {
+    buttons: ['b', 'h2', 'code', 'warning', 'pop'],
+    extensions: {
+        'b':  new MediumButton({label:'BOLD', start:'<b>', end:'</b>'}),
+        'h2': new MediumButton({label:'h2', start:'<h2>', end:'</h2>'}),
+       
+       'warning': new MediumButton({
+          label: '<i class="fa fa-exclamation-triangle"></i>',
+          start: '<div class="warning">',
+          end:   '</div>'
+       }),
+     
+       'pop': new MediumButton({
+          label:'POP', 
+          action: function(html, mark){
+                    alert('hello :)'); 
+                    return html; 
+                  }
+        })
+    }
+});</script>

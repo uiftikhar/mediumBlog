@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require medium-editor
+//= require MediumButton
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets  
